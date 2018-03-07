@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/JavaPractice"/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="gson-1.7.2.jar" scope="COMPILE">
+		<srcroot url="file:///home/raghvendra.krishan/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/1.7.2/a6fe3006df46174a9c1c56b3c51357b9bfde5874/gson-1.7.2-sources.jar"/>
+	</lib>
+	<lib name="json-simple-1.1.jar" scope="COMPILE">
+		<srcroot url="file:///home/raghvendra.krishan/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/19c6d8dee6803c520d855ff7e8a8c3d97f1271ec/json-simple-1.1-sources.jar"/>
+	</lib>
+	<lib name="commons-lang3-3.4.jar" scope="COMPILE">
+		<srcroot url="file:///home/raghvendra.krishan/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/b49dafc9cfef24c356827f322e773e7c26725dd2/commons-lang3-3.4-sources.jar"/>
+	</lib>
+	<lib name="slf4j-api-1.7.13.jar" scope="COMPILE">
+		<srcroot url="file:///home/raghvendra.krishan/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.13/96e785df399a4e1a6c030877097807b7e18520cc/slf4j-api-1.7.13-sources.jar"/>
+	</lib>
+	<lib name="geronimo-javamail_1.4_spec-1.7.1.jar" scope="COMPILE">
+		<srcroot url="file:///home/raghvendra.krishan/.gradle/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-javamail_1.4_spec/1.7.1/8c671a08f1a98697e26419b69451430e153193c0/geronimo-javamail_1.4_spec-1.7.1-sources.jar"/>
+	</lib>
+</component>

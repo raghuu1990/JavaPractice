@@ -1,0 +1,51 @@
+Big O -> worst time complexity
+Big 0 -> average time complexity
+Big ohm -> best time complexity
+
+O(1) -> constant time
+O(n) -> n times
+
+
+Array:
+        access : O(1)  : if you know position to access i.e. arr[pos]
+        search : O(n)  : need to look every element to match, could be at nth pos
+        insert : O(n)  : given input n numbers, all element will take n times
+        delete : O(n)  : if first position will be deleted then all next element need to shift to left
+
+Stack:
+        access : O(n)  : we can't access any element element directly except top element
+        search : O(n)  : same as above
+        insert : O(1)  : insert in stack's top position directly
+        delete : O(1)  : remove from top position directly
+Queue:
+        access : O(n)  : have not direct access to every element, access to head and tail only
+        search : O(n)  : same as above
+        insert : O(1)  : add to tail/rear
+        delete : O(1)  : remove from front/head
+
+Singly/Doubly Linked List:
+        access : O(n)  : access to only head pointer, can't access to anyone directly
+        search : O(n)  : access to only head pointer, need to traverse all one by one
+        insert : O(1)  : inserting at head, point new element's next to head and return new element as head
+        delete : O(1)  : deleting head, and return next element as head.
+
+HashMap:
+        search : N/A   : generally it's said O(1) for average case, but depends hash implementation
+                         O(1) time to go to bucket, but in bucket to search takes O(logn) time
+                         for particular element in case of java 8
+                         worst case can go up to O(logn) -> might all elements in one bucket
+
+        add    : N/A   : same as above
+        delete : N/A   : same as above
+Binary Search Tree:
+        search : O(n),0(logn) : worst case, think all elements added was in asc/desc order, bst will be created in
+                                vertical left/right line, So, access will be like single linked list.
+                                but average it'll be log(n)
+        insert : O(n),0(logn) : same as above
+        delete : O(n),0(logn) : same as above
+
+AVL tree and
+Red Black tree : O(log) : for all operations for best and average case.
+
+Heap:
+

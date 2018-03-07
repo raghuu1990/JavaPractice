@@ -1,0 +1,21 @@
+Life cycle of a Thread :
+
+1) New : The thread is in new state if you create an instance of Thread class but
+	 before the invocation of start() method.
+2) Runnable : The thread is in runnable state after invocation of start() method,
+	 but the thread scheduler has not selected it to be the running thread.
+3) Running : The thread is in running state if the thread scheduler has selected it.
+4) Non-Runnable (Blocked): This is the state when the thread is still alive,
+	 but is currently not eligible to run.
+5) Terminated : A thread is in terminated or dead state when its run() method exits. 
+
+
+Dif bw start()/ rum() :
+
+Main difference is that when program calls start() method a new Thread is created 
+and code inside run() method is executed in new Thread while if you call run() method
+directly no new Thread is created and code inside run() will execute on current Thread.
+
+Another difference between start vs run in Java thread is that you can not call
+start() method twice on thread object. once started, second call of start()
+will throw IllegalStateException in Java while you can call run() method twice.

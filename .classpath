@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/Authorization.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/geronimo-javamail_1.4_spec-1.7.1.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/gson-2.8.0.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/json-simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/QuickBookService.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/slf4j-api-1.7.13.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/joda-time-2.9.jar"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/Desktop/Jars/spymemcached-2.12.3.jar"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/.m2/repository/org/springframework/spring-web/4.1.7.RELEASE/spring-web-4.1.7.RELEASE.jar" sourcepath="/tmp/.org.sf.feeling.decompiler1519795028716/source/spring-web-4.1.7.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.springframework"/>
+			<attribute name="maven.artifactId" value="spring-web"/>
+			<attribute name="maven.version" value="4.1.7.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/.m2/repository/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.springframework"/>
+			<attribute name="maven.artifactId" value="spring-beans"/>
+			<attribute name="maven.version" value="4.1.7.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/.m2/repository/org/springframework/spring-context/4.1.7.RELEASE/spring-context-4.1.7.RELEASE.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.springframework"/>
+			<attribute name="maven.artifactId" value="spring-context"/>
+			<attribute name="maven.version" value="4.1.7.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/raghvendra.krishan/.m2/repository/org/springframework/spring-web/3.0.6.RELEASE/spring-web-3.0.6.RELEASE.jar" sourcepath="/home/raghvendra.krishan/.m2/repository/org/springframework/spring-web/3.0.6.RELEASE/spring-web-3.0.6.RELEASE-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="spring-web-3.0.6.RELEASE.jar"/>
+			<attribute name="maven.groupId" value="org.springframework"/>
+			<attribute name="maven.artifactId" value="spring-web"/>
+			<attribute name="maven.version" value="3.0.6.RELEASE"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

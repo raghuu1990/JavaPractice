@@ -1,0 +1,17 @@
+Encapsulation (data hiding) : in Java or object oriented programming language is a concept which
+ enforces protecting variables, functions from outside of class.
+ 
+Polymorphism : is an Oops concept which advice use of common interface instead of concrete 
+implementation while writing code. In Java programming whole concept of interface is based 
+on Polymorphism.
+
+Abstraction : in Java or Object oriented programming is a way to segregate implementation 
+from an interface. Abstraction in Java is achieved by  using interface and abstract class in Java.
+Abstraction is creating interface to denote common behavior without specifying any details about
+how that behavior works e.g. You create an interface called Server which has the start() and stop()
+method. This is called abstraction of Server because every server should have a way to start and stop 
+and details may differ. 
+
+
+
+ 

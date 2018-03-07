@@ -1,0 +1,103 @@
+ArrayList : Non Synchronised, Sequential, Ordered, have null, Expend automatic, Hold object type not primitive type, Uses a dynamic array.
+Vector : Same as ArrayList, Synchronised, Grow automatic, Not required fix dimension like int or string, can add at index
+Linked List : Slow for indexing, Ordered and Non sequential, Uses doubly linked list.
+HashSet : unordered, non duplicate, allow null, uses hash table , implement set interface
+TreeSet : sorted, implement sorted set interface
+HashMap : null key value, non duplicated keys, unordered, unsynchronized, return as insert order, implement map interface
+TreeMap : sorted, non duplicated keys, null value, not null key, slower than hash map , implement a sorted map interface, Maintains ascending order.
+LinkedHashSet :  ordered set
+LinkedHashMap : ordered hashmap
+
+# Sequntial: order in merory 
+# Ordered : present in same order as inserted 
+#
+
+default size : Vector - 10, Arraylist - 10, Hashtable - 11, Hashmap - 16, Hashset - 16
+
+Vector Vs ArrayList
+ArrayList is not synchronized.	Vector is synchronized.
+ArrayList increases its size by 50% of the array size.	Vector increases its size by doubling the array size.
+
+ListIterator VS Iterator
+Iterator traverses the elements in forward direction only whereas ListIterator traverses the elements in forward and backward direction.
+Iterator can be used in List, Set and Queue.
+ListIterator can be used in List only.
+
+List VS Set
+List can contain duplicate elements whereas Set contains only unique elements.
+
+Set VS Map
+Set contains values only whereas Map contains key and values both.
+
+Collection VS Collections
+
+Collection is an interface whereas Collections is a class. Collection interface provides normal functionality of data structure to List, Set and Queue. But, Collections class is to sort and synchronize collection elements.
+
+ConcurrentHashMap, Hashtable and Synchronized Map in Java
+
+Hashtable VS HashMap
+HashMap is not thread-safe but Hashtable is thread-safe. Which means you cannot use HashMap in multi-threaded Java application without external synchronization.
+HashMap allows one null key and null values but Hashtable doesn't allow null key or values. Also thread-safety of hash table is achieved using internal synchronization, which makes it slower than HashMap. 
+Hashmap is traveresed using an iterator, hashtable can be traversed by enumerator or iterator.
+Iterator in hashmap is fail-fast, enumerator in hashtable is not fail-fast
+
+To create Read only Lists (ArrayList,Vector,LinkedList): Collections.unmodifiableList(list). This method returns a new list. If a user tries to perform add operation on the new list; UnSupportedOperationException is thrown.
+
+** Java’s hashtable uses ‘separate chaining’ for collision resolution in Hashtable.
+
+collections can be synchronized:
+Collections.synchronizedList(List list)
+Collections.synchronizedMap(Map map)
+Collections.synchronizedCollection(Collection c)
+  
+Q : If an Employee class is present and its objects are added in an arrayList. Now I want the list to be sorted on the basis of the employeeID of Employee class. What are the steps?
+Implement Comparable interface for the Employee class and override the compareTo(Object obj) method in which compare the employeeID
+Now call Collections.sort() method and pass the list as an argument.
+
+Now consider that Employee class is a jar file.
+Since Comparable interface cannot be implemented, create Comparator and override the compare(Object obj, Object obj1) method .
+Call Collections.sort() on the list and pass comparator as an argument.
+  
+  
+  
+Inversion of control is a design paradigm with the goal of giving more control to the targeted components of your application, the ones getting the work done.
+using a factory pattern
+using a service locator pattern
+using a dependency injection of any given below type:
+a constructor injection
+a setter injection
+an interface injection
+
+equals and == and hashCode
+
+Some of the JVM cache objects of some wrapper class e.g. Integer from -128 to 127 and return same object which if compare via “==” can return true but after this range this validity doesn't work and to make it worse this behavior is JVM dependent so better avoid this kind of check and use equals() method.
+
+If you override the equals(), you MUST also override hashCode(). Otherwise a violation of the general contract for Object.hashCode will occur,
+
+If you are unsure how to implement hashCode(), just always return 0 in your implementations. So all of your custom objects will return the same hash code. Yes, it turns hashtable of your objects into one (possibly) long linked-list, but you have implemented hashCode() correctly!
+
+Marker Interface
+
+“An interface is called a marker interface when it is provided as a handle by Java interpreter to mark a class so that it can provide special behaviour to it at runtime and they do not have any method declarations”.
+used to indicate something to compiler or JVM. So if JVM sees a Class is Serializable it done some special operation on it, similar way if JVM sees one Class is implement Clonnable it performs some operation to support cloning. 
+I don’t think, in future there will be any new marker interfaces added.
+We cannot create marker interfaces, as you cannot instruct JVM to add special behavior to all classes implementing (directly) that special interface.
+Java Marker Interface Examples
+java.lang.Cloneable
+java.io.Serializable
+java.util.EventListener
+
+
+All the exceptions are subclasses of java.lang.Exception
+
+Runtime Exception OR unchecked exception : Result of a programming problem. arithmetic exceptions, dividing by zero, null pointer exceptions.  need not be explicitly caught in try catch block. Correct the programming logic where the exception has occurred or provide a check.
+
+Checked exception: Checked exception are the exceptions which forces the programmer to catch them explicitly in try-catch block. It is a subClass of Exception. Example: IOException.
+
+Error : An error is an irrecoverable condition occurring at runtime. Such as OutOfMemory error. These JVM errors you can not repair them at runtime.Though error can be caught in catch block but the execution of application will come to a halt and is not recoverable.
+
+The try block must be followed by a catch or a finally block.
+
+All the exceptions inherit a method printStackTrace() from the Throwable class. This method prints the stack trace from where the exception occurred. It prints the most recently entered method first and continues down, printing the name of each method as it works its way down the call stack from the top.
+
+If the calling method does not handle and declares the exception, the exceptions is passed to the next method in the method stack. This is called as ducking the exception down the method stack.

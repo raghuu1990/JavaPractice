@@ -1,0 +1,2 @@
+Predicate : functional interface added in Java 8
+in Java 8 it is possible to reference both a static and an instance a method using the new :: operator
